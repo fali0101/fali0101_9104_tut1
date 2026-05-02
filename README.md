@@ -1,47 +1,29 @@
 # fali0101_9104_tut1s
-My first repository for IDEA9103
 
-This is my first local change to the repo!
+## Part 1: Imaging Technique Inspiration
 
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+**Falling Snow Motion**
 
-**Bold Text** or __Bold Text__
-*Italic Text* or _Italic Text_
+The inspiration comes from these two photos of snow at night. What interests me most is how the snow is captured as movement rather than just static shapes, creating a natural falling snow effect.
 
-- Item 1
-- Item 2
-  - Subitem 2.1
-  - Subitem 2.2
+In the first image, the snow looks fast and directional. The flakes are stretched and uneven, which makes the motion feel strong and a bit chaotic. In the second image, the snow appears more gentle and evenly spread, creating a calmer and softer feeling. It keeps changing over time, which makes it feel more alive.
 
-* Item 1
-* Item 2
-  * Subitem 2.1
-  * Subitem 2.2
+For my project, this idea could be useful to create background atmosphere or subtle motion, instead of just using still visuals. It can also make the experience feel more engaging.
 
-1. First Item
-2. Second Item
-3. Third Item
+![An image of falling snowflakes](image/bdb2b3a15a6d509813baeb20735d10e4.jpg)
+![Another image of falling snowflakes](image/33da29e410fd8388e2f0f1b29d311bb5.jpg)
 
-Text inbetween
+## Part 2: Coding Technique Exploration
 
-1. First Item
-1. Second Item
-1. Second Item
-1. Third Item
+**Using Class + Array to Build a Particle System**
 
-[Google Homepage](https://www.google.com/)
-![An image of a cat](https://placecats.com/200/300)
-![An image of the Mona Lisa](image/Mona_Lisa_by_Leonardo_da_Vinci_500_x_700.jpg)
+This example uses a class (Snowflake) and an array (snowflakes[]) to manage multiple moving objects.
 
-```
-function helloWorld() {
-console.log("Hello, world!");
-}
-```
+Each snowflake has its own properties like position, size, speed, and color. In the update() function, the snowflake moves down the screen and slightly left and right using a sine wave (sin()), which makes the motion look more natural instead of straight falling.
 
-> This is a blockquote.
+The draw() loop updates and displays all snowflakes every frame, creating continuous animation.
+
+I think this method is useful because it makes it easy to control many elements at once and adjust their behaviour individually.
+
+![Screenshot](image/fallingsnowflakes.png)
+[A link to this example](https://p5js.org/examples/classes-and-objects-snowflakes/)
